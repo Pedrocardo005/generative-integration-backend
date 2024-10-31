@@ -18,3 +18,8 @@ source env/bin/activate
 ```bash
 pip install requirements.txt
 ```
+
+4. Aplique as migrações
+```bash
+python backend/manage.py migrate
+```
