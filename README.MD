@@ -28,3 +28,13 @@ python backend/manage.py migrate
 ```python
 GEMINI_API_KEY = os.getenv('GEMINI_API_KEY', '<suaChave>')
 ```
+
+## Bibliotecas utilizadas
+
+1. [django rest framework](https://www.django-rest-framework.org/)
+1. [drf-spectacular](https://github.com/tfranzel/drf-spectacular/)
+
+## Documentação da API
+
+Url da documentação feita com `swagger` e `drf-spectacular`:
+`localhost:8000/gemini/chat/schema/swagger-ui/`

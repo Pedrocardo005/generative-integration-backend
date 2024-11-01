@@ -1,10 +1,12 @@
 annotated-types==0.7.0
 asgiref==3.8.1
+attrs==24.2.0
 cachetools==5.5.0
 certifi==2024.8.30
 charset-normalizer==3.4.0
 Django==5.1.2
 djangorestframework==3.15.2
+drf-spectacular==0.27.2
 google-ai-generativelanguage==0.6.10
 google-api-core==2.22.0
 google-api-python-client==2.149.0
@@ -16,6 +18,9 @@ grpcio==1.67.1
 grpcio-status==1.67.1
 httplib2==0.22.0
 idna==3.10
+inflection==0.5.1
+jsonschema==4.23.0
+jsonschema-specifications==2024.10.1
 proto-plus==1.25.0
 protobuf==5.28.3
 pyasn1==0.6.1
@@ -23,7 +28,10 @@ pyasn1_modules==0.4.1
 pydantic==2.9.2
 pydantic_core==2.23.4
 pyparsing==3.2.0
+PyYAML==6.0.2
+referencing==0.35.1
 requests==2.32.3
+rpds-py==0.20.1
 rsa==4.9
 sqlparse==0.5.1
 tqdm==4.66.6
