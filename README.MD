@@ -2,6 +2,8 @@
 
 Este repositório tem por objetivo criar uma integração com alguma ia generativa.
 
+Repositório [frontend](https://github.com/Pedrocardo005/generative-integration-front)
+
 ## Como rodar o projeto
 
 1. Crie um ambiente virtual
