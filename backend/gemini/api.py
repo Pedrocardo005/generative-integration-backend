@@ -1,5 +1,6 @@
 from rest_framework import generics
 from rest_framework.response import Response
+import markdown
 
 from .models import Chat
 from .serializers import ChatSerializer
@@ -11,10 +12,10 @@ class ChatsAPI(generics.ListCreateAPIView):
     queryset = Chat.objects.all()
 
     def create(self, request, *args, **kwargs):
-        text = request.data['text']
+        text = request.data["text"]
         output = Util.gemini_integration(text)
-        serializer = ChatSerializer(
-            data={'text_input': text, 'gemini_output': output})
+        output = markdown.markdown(output)
+        serializer = ChatSerializer(data={"text_input": text, "gemini_output": output})
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=201)
